@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "outfit";
+  src: url(/src/assets/fonts/outfit.woff2) format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  ascent-override: 100%;
+  descent-override: 0%;
+  
+}
+
+@theme {
+  --font-outfit: "outfit", Helvetica;
+}
