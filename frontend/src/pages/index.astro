@@ -2,7 +2,7 @@
 import '../styles/global.css'
 ---
 
-<html lang="en">
+<html lang="en" class="scrollbar-thin scrollbar-thumb-[#17171c] scrollbar-track-[#ededed]">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -13,7 +13,7 @@ import '../styles/global.css'
 	</head>
 	<body class="bg-[#ededed]">
 		<div>
-			<header class="relative bg-white rounded-b-lg flex flex-row justify-between items-center p-2 z-100">
+			<header class="relative bg-white rounded-b-lg flex flex-row justify-between items-center p-2 z-100 ml-auto mr-auto max-w-[98vw]">
 				<nav class="flex gap-3">
 					<a href="#" class="font-outfit text-lg text-[#17171c]">Posts</a>
 					<a href="#" class="font-outfit text-lg text-[#17171c]">Projects</a>
@@ -23,9 +23,9 @@ import '../styles/global.css'
 					<a href="#" class="font-outfit text-lg text-[#17171c]">About</a>
 				</nav>
 			</header>
-			<section class="absolute min-h-1/10 w-full top-9.25 z-0 rounded-b-lg bg-[#ededed] pt-4 pb-1 px-2 flex flex-col items-center">
+			<section class="absolute min-h-1/10 top-9.25 z-0 bg-[#ededed] pt-4 pb-1 px-2 flex flex-col items-center right-0 left-0 ml-auto mr-auto max-w-[98vw]">
 				<!-- <pre class="text-gray-700">Hamad Alafeefi&middot;Studying Cybersecurity&middot;UAE&middot;Love Coding</pre> -->
-				 <pre class="text-gray-700">Name: Hamad Alafeefi &middot; Studying: Cybersecurity &middot; Based: UAE &middot; Enjoys: Coding, A lot!</pre>
+				<pre class="text-gray-700">Name: Hamad Alafeefi &middot; Studying: Cybersecurity &middot; Based: UAE &middot; Enjoys: Coding, A lot!</pre>
 				<div class="flex justify-end flex-col w-full flex-1">
 					<nav class="relative flex justify-between">
 						<nav class="absolute left-1/2 -translate-x-1/2 flex justify-center gap-3">
@@ -36,8 +36,13 @@ import '../styles/global.css'
 					</nav>
 				</div>
 			</section>
-			<div class="flex flex-col justify-center">
-				<div class="bg-[#17171c] min-h-[96vh]"></div>
+			<div class="flex flex-col justify-center items-center place-items-center ml-auto mr-auto min-h-screen max-w-[98vw]">
+				<div class="bg-[#17171c] w-full min-h-screen h-full rounded-b-2xl">
+					
+				</div>
+				<footer class="bg-[#ededed] max-h-2/10 bottom-0 font-outfit w-full text-[12vw] font-black uppercase tracking-tighter text-center leading-none">
+				Alafeefi
+				</footer>
 			</div>
 		</div>
 	</body>
