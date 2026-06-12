@@ -1,49 +1,39 @@
 ---
 import '../styles/global.css'
+import arrow from '../assets/images/hrefarrow.svg'
 ---
 
-<html lang="en" class="scrollbar-thin scrollbar-thumb-[#17171c] scrollbar-track-[#ededed]">
+<html lang="en" class="scrollbar-thin">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Hamad Alafeefi | Cybersecurity Student & Software Engineer</title>
+        <meta name="description" content="Hamad Alafeefi - IT and Cybersecurity student at Abu Dhabi University. Passionate about Python, Go, JavaScript, and TypeScript" />
+        <meta property="og:title" content="Hamad Alafeefi" />
+        <meta property="og:description" content="IT & Cybersecurity student. Programmer. Abu Dhabi University." />
+        <meta property="og:url" content="https://alafeefi.com" />
+        <meta property="og:type" content="website" />
 	</head>
-	<body class="bg-[#ededed]">
-		<div>
-			<header class="relative bg-white rounded-b-lg flex flex-row justify-between items-center p-2 z-100 ml-auto mr-auto max-w-[98vw]">
-				<nav class="flex gap-3">
-					<a href="#" class="font-outfit text-lg text-[#17171c]">Posts</a>
-					<a href="#" class="font-outfit text-lg text-[#17171c]">Projects</a>
-				</nav>
-				<a href="/" class="absolute left-1/2 text-3xl -translate-x-1/2 font-outfit select-none text-[#17171c] font-black">ALAFEEFI</a>
-				<nav class="flex gap-3">
-					<a href="#" class="font-outfit text-lg text-[#17171c]">About</a>
-				</nav>
-			</header>
-			<section class="absolute min-h-1/10 top-9.25 z-0 bg-[#ededed] pt-4 pb-1 px-2 flex flex-col items-center right-0 left-0 ml-auto mr-auto max-w-[98vw]">
-				<!-- <pre class="text-gray-700">Hamad Alafeefi&middot;Studying Cybersecurity&middot;UAE&middot;Love Coding</pre> -->
-				<pre class="text-gray-700">Name: Hamad Alafeefi &middot; Studying: Cybersecurity &middot; Based: UAE &middot; Enjoys: Coding, A lot!</pre>
-				<div class="flex justify-end flex-col w-full flex-1">
-					<nav class="relative flex justify-between">
-						<nav class="absolute left-1/2 -translate-x-1/2 flex justify-center gap-3">
-							<a href="#" class="font-outfit self-center">LI</a>
-							<a href="#" class="font-outfit self-center">GH</a>
-						</nav>
-						<a href="mailto:info@alafeefi.com" class="font-outfit text-md ml-auto">info@alafeefi.com</a>
-					</nav>
-				</div>
-			</section>
-			<div class="flex flex-col justify-center items-center place-items-center ml-auto mr-auto min-h-screen max-w-[98vw]">
-				<div class="bg-[#17171c] w-full min-h-screen h-full rounded-b-2xl">
-					
-				</div>
-				<footer class="bg-[#ededed] max-h-2/10 bottom-0 font-outfit w-full text-[12vw] font-black uppercase tracking-tighter text-center leading-none">
-				Alafeefi
-				</footer>
-			</div>
-		</div>
-	</body>
+    <body class="bg-[#17171c] h-screen flex justify-center items-center selection:text-red-200 selection:bg-red-200/30">
+        <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+            <div class="absolute w-72 h-72 sm:w-130 sm:h-130 bg-[#E3170A] rounded-full top-10 sm:top-20 left-20 sm:left-40 opacity-40 blur-2xl animate-float-medium"></div>
+            <div class="absolute w-72 h-72 sm:w-130 sm:h-130 bg-[#A9E5BB] rounded-full bottom-10 sm:bottom-20 right-20 sm:right-40 opacity-40 blur-2xl animate-float-medium"></div>
+        </div>
+
+        <div id="card" class="bg-white/3 w-9/10 sm:w-1/2 max-h-4/10 min-h-3/10 md:min-h-0 md:max-h-fit rounded-3xl backdrop-blur-xl shadow-lg ring-1 ring-white/12 p-2 pt-3 flex flex-col justify-between">
+            <h1 class="text-white/50 text-center font-outfit font-bold text-6xl">Alafeefi</h1>
+            <p class="text-white/60 font-outfit pt-2 md:py-2 px-2 mb-auto sm:mb-0 md:mb-0 sm:text-center sm:text-xl">My name is Hamad Alafeefi, an IT & Cybersecurity student at Abu Dhabi University who enjoys building things with Python, Go, and TypeScript</p>
+            <a href="https://hmd.sh" class="py-4 mt-3 bg-amber-100/80 select-none rounded-3xl flex justify-center items-center font-outfit font-bold text-3xl sm:text-4xl cursor-pointer z-5 transition-all duration-200 ease-out shadow-[0_0_0_0px_var(--color-rose-400)] hover:opacity-95 hover:text-black/85 hover:shadow-[0_0_0_3px_var(--color-rose-400)] active:shadow-[0_0_0_3px_var(--color-rose-400)]" rel="noopener noreferrer" target="_blank">
+                <span>Blog</span>
+                <img src={arrow.src} alt="" class="hidden md:block h-[0.7cap] w-auto pt-2 pl-0.75" />
+            </a>
+            <div id="task-buttons" class="absolute px-2 bg-white/6 backdrop-blur-xl shadow-sm ring-1 ring-white/15 top-0 right-0 w-15 h-6 m-3 rounded-4xl justify-between items-center hidden sm:flex">
+                <div id="red-circle" class="w-3 h-3 cursor-pointer transition-opacity duration-200 hover:opacity-80 bg-red-500 rounded-full bg-red"></div>
+                <div id="yellow-circle" class="w-3 h-3 cursor-pointer transition-opacity duration-200 hover:opacity-80 bg-yellow-400 rounded-full bg-red"></div>
+                <div id="green-circle" class="w-3 h-3 cursor-pointer transition-opacity duration-200 hover:opacity-80 bg-green-500 rounded-full bg-red"></div>
+            </div>
+        </div>
+    </body>
 </html>

@@ -9,10 +9,6 @@
   
 }
 
-@theme {
-  --font-outfit: "outfit", Helvetica;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -33,6 +29,7 @@ html {
   --animate-float-slow: float 10s ease-in-out infinite;
   --animate-float-medium: float 7s ease-in-out infinite;
   --animate-float-fast: float 5s ease-in-out infinite;
+  --font-outfit: "outfit", Helvetica;
 
   @keyframes float {
     0%   { transform: translateY(0px) rotate(0deg); }
