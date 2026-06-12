@@ -12,3 +12,33 @@
 @theme {
   --font-outfit: "outfit", Helvetica;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overscroll-behavior-y: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@theme {
+  --animate-float-slow: float 10s ease-in-out infinite;
+  --animate-float-medium: float 7s ease-in-out infinite;
+  --animate-float-fast: float 5s ease-in-out infinite;
+
+  @keyframes float {
+    0%   { transform: translateY(0px) rotate(0deg); }
+    25%  { transform: translateY(-20px) rotate(3deg); }
+    50%  { transform: translateY(-10px) rotate(-2deg); }
+    75%  { transform: translateY(-25px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+  }
+}

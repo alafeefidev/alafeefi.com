@@ -1,0 +1,32 @@
+---
+import '../styles/global.css'
+---
+
+<html lang="en" class="scrollbar-thin">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Astro</title>
+	</head>
+    <body class="bg-[#17171c] h-screen flex justify-center items-center">
+        <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+            <div class="absolute w-72 h-72 sm:w-130 sm:h-130 bg-[#E3170A] rounded-full top-10 sm:top-20 left-20 sm:left-40 opacity-40 blur-2xl animate-float-medium"></div>
+            <div class="absolute w-72 h-72 sm:w-130 sm:h-130 bg-[#A9E5BB] rounded-full bottom-10 sm:bottom-20 right-20 sm:right-40 opacity-40 blur-2xl animate-float-medium"></div>
+        </div>
+
+        <div id="card" class="bg-white/3 w-9/10 sm:w-1/2 max-h-4/10 min-h-3/10 md:min-h-0 md:max-h-fit rounded-3xl backdrop-blur-xl shadow-lg ring-1 ring-white/12 p-2 pt-3 flex flex-col justify-between">
+            <h1 class="text-white/50 text-center font-outfit font-bold text-6xl">Alafeefi</h1>
+            <p class="text-white/50 font-outfit pt-2 md:py-2 px-2 mb-auto sm:mb-0 md:mb-0 sm:text-center sm:text-xl">My name is Hamad Alafeefi. I'm a student studying IT and Cybersecurity in Abu Dhabi University. I like programming in various programming languages including: Python, Go, JS, TS. </p>
+            <a href="https://hmd.sh" class="pb-auto py-4 mt-3 bg-amber-100/80 rounded-3xl flex justify-center items-center font-outfit font-bold text-3xl sm:text-4xl cursor-pointer z-5 transition-all duration-200 shadow-[0_0_0_0px_var(--color-rose-400)] hover:opacity-95 hover:shadow-[0_0_0_3px_var(--color-rose-400)]">
+                <span>Blog</span>
+            </a>
+            <div id="task-buttons" class="absolute px-2 bg-white/6 backdrop-blur-xl shadow-sm ring-1 ring-white/15 top-0 right-0 w-15 h-5 m-3 rounded-4xl flex justify-between items-center">
+                <div id="red" class="w-3 h-3 cursor-pointer transition-opacity duration-200 hover:opacity-80 bg-red-500 rounded-full bg-red"></div>
+                <div id="red" class="w-3 h-3 cursor-pointer transition-opacity duration-200 hover:opacity-80 bg-yellow-400 rounded-full bg-red"></div>
+                <div id="red" class="w-3 h-3 cursor-pointer transition-opacity duration-200 hover:opacity-80 bg-green-500 rounded-full bg-red"></div>
+            </div>
+        </div>
+    </body>
+</html>
